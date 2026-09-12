@@ -1,0 +1,5 @@
+# Source overlay for the tsx launcher. The relative entry is anchored to this
+# file, so development does not depend on a profile-local package symlink.
+- insert:
+    - id: revenue-source
+      name: './src/index.ts'

@@ -719,6 +719,38 @@ export interface InspectorOptions {
 
 来源：[`packages/experimental/inspector/src/index.ts:66`](../packages/experimental/inspector/src/index.ts)
 
+<a id="deepseek-aidsh-experimental-revenue-source"></a>
+
+## `@deepseek-ai/dsh-experimental-revenue-source`
+
+需要：`tools`
+
+```ts config-catalog
+/** Read-only source search configuration. */
+export interface Config {
+  /** Explicit source roots; an empty list means the current workspace. */
+  roots?: ConfiguredRoot[]
+  /** Maximum source files visited by one call. */
+  maxFiles?: number
+  /** Maximum bytes read from one source file. */
+  maxFileBytes?: number
+  /** Maximum evidence records returned by one call. */
+  maxResults?: number
+  /** Directory basenames excluded from recursive traversal. */
+  excludedDirectories?: string[]
+}
+
+/** One source directory available to the evidence tools. */
+export interface ConfiguredRoot {
+  /** Stable label included in every evidence record. */
+  label: string
+  /** Absolute path, or a path relative to the calling workspace. */
+  path: string
+}
+```
+
+来源：[`packages/experimental/revenue-source/src/index.ts:28`](../packages/experimental/revenue-source/src/index.ts)
+
 <a id="deepseek-aidsh-experimental-tool-agent-team"></a>
 
 ## `@deepseek-ai/dsh-experimental-tool-agent-team`

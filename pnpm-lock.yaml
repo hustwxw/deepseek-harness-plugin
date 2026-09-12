@@ -5593,6 +5593,19 @@ importers:
         specifier: ^4.19.2
         version: 4.22.4
 
+  packages/experimental/revenue-source:
+    dependencies:
+      '@deepseek-ai/schemastery':
+        specifier: link:../../../vendor/schemastery
+        version: link:../../../vendor/schemastery
+    devDependencies:
+      '@deepseek-ai/cordis':
+        specifier: workspace:^
+        version: link:../../../vendor/cordis
+      '@deepseek-ai/dsh-tools':
+        specifier: workspace:^
+        version: link:../../core/tools
+
   packages/experimental/tool-agent-team:
     dependencies:
       '@deepseek-ai/schemastery':

@@ -1,0 +1,6 @@
+# Built-artifact Profile Bundle: expose read-only source search and flow tracing.
+# Run the Host build first; the relative entry keeps Loader package inventory
+# resolution working without requiring a profile-local workspace symlink.
+- insert:
+    - id: revenue-source
+      name: './lib/index.js'
